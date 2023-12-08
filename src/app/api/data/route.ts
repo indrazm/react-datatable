@@ -6,7 +6,7 @@ function generateArray(length: number) {
 }
 
 export async function GET() {
-  const data = generateArray(20).map(() => {
+  const data = generateArray(200).map(() => {
     return {
       id: faker.string.uuid(),
       firstName: faker.person.firstName(),
